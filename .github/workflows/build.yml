@@ -32,7 +32,7 @@ jobs:
           channel: 'stable'
 
       - name: Build APK
-        run: yes | flet build apk --module-name koshtorys_ai_google_search
+        run: yes | flet build apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
