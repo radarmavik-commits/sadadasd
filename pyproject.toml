@@ -1,0 +1,14 @@
+[tool.flet]
+name = "KoshtorysAI"
+org = "com.example"
+version = "1.0.0"
+
+[tool.flet.app]
+path = "koshtorys_ai_google_search.py"
+
+[tool.flet.dependencies]
+flet = "*"
+google-generativeai = "*"
+google-genai = "*"
+pandas = "*"
+openpyxl = "*"
