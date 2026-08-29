@@ -2,7 +2,7 @@ name: Build Android APK
 
 on:
   push:
-    branches: [ main, master, основной ]
+    branches: [ main, master ]
 
 jobs:
   build:
@@ -31,8 +31,8 @@ jobs:
         with:
           channel: 'stable'
 
-      - name: Build APP
-        run: yes | flet build apk --module-name koshtorys_ai_google_search
+      - name: Build APK
+        run: yes | flet build apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
