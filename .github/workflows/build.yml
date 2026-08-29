@@ -31,8 +31,7 @@ jobs:
         with:
           channel: 'stable'
 
-      - name: Build APK
-        run: yes | - name: Build APK
+      - name: Build APP
         run: yes | flet build apk --module-name koshtorys_ai_google_search
 
       - name: Upload APK
